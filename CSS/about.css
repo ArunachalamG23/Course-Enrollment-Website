@@ -1,0 +1,65 @@
+/* Global Styles */
+body {
+    background: url('index.jpg') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: rgba(0, 123, 255, 0.9); /* Blue background for the navbar */
+    padding: 10px; /* Padding for the navbar */
+    text-align: center; /* Center items */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Increased width for better view */
+    margin: 30px auto; /* Center with margin */
+    padding: 20px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow */
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #007bff; /* Blue heading text */
+}
+
+h2 {
+    margin-top: 20px; /* Space above subheadings */
+}
+
+/* Image Styles */
+.image-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space images to the corners */
+    margin-top: 20px; /* Margin above the image container */
+}
+
+.compact-image {
+    width: 40%; /* Medium size for images */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

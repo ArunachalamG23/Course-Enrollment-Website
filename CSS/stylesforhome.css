@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    background: url('index.jpg') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    padding: 10px; /* Increased padding */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Increased spacing between items */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Increased width for better view */
+    margin: 30px auto; /* Center with margin */
+    padding: 20px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow */
+}
+
+/* Box Styles for Contact Page */
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for boxes */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners for boxes */
+    padding: 15px; /* Padding inside boxes */
+    margin-bottom: 20px; /* Space between boxes */
+}
+
+/* Heading Styles */
+h1 {
+    color: #007bff; /* Blue heading text */
+    text-align: center; /* Center the heading */
+}
+
+/* Input Styles */
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increased padding */
+    margin: 10px 0; /* Increased margin */
+    box-sizing: border-box; /* Box sizing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Button Styles */
+input[type="submit"], input[type="button"] {
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    padding: 12px; /* Increased padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Larger font size */
+    width: 100%; /* Full width for buttons */
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 15px; /* Spacing above the table */
+}
+
+th, td {
+    padding: 12px; /* Increased padding for cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for header */
+}
+
+/* Success Message Styles */
+#studentSaved {
+    text-align: center; /* Center the success message */
+    color: green; /* Green color for success message */
+    margin-top: 10px; /* Spacing above the message */
+}
+
+/* Responsive Adjustments (Optional) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%; /* Increase width for smaller screens */
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+    
+    nav ul li {
+        margin: 0 5px; /* Reduce spacing between items on smaller screens */
+    }
+}

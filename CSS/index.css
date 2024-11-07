@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    background: url('index.jpg') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 123, 255, 0.9); /* Blue background for the navbar */
+    padding: 10px; /* Padding for the navbar */
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Position at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the items horizontally */
+}
+
+nav li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Limit width to 800px */
+    margin: 80px auto; /* Center the container with margin, add top margin to avoid header overlap */
+    padding: 20px; /* Add padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Header Styles */
+h1 {
+    color: #007bff; /* Blue heading text */
+    text-align: left; /* Align to the left */
+    font-size: 24px; /* Consistent font size */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Image Styles */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space images to the corners */
+    margin-top: 20px; /* Space above the image container */
+}
+
+.compact-image {
+    width: 40%; /* Set width to 40% for each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%; /* Increase width for smaller screens */
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+
+    .compact-image {
+        width: 100%; /* Full width for images on small screens */
+        margin-bottom: 10px; /* Space below images */
+    }
+}

@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    background: url('index.jpg') no-repeat center center fixed; /* Replace with your image */
+    background-size: cover;
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    padding: 10px; /* Increased padding */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Increased spacing between items */
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px; /* Increased width for better view */
+    margin: 30px auto; /* Center with margin */
+    padding: 20px; /* Increased padding */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhanced box shadow */
+}
+
+/* Heading Styles */
+h1 {
+    color: #333; /* Darker color for main heading */
+    text-align: left; /* Align left */
+}
+
+/* Course List Styles */
+.course-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.course-list li {
+    margin-bottom: 15px; /* Space between course items */
+}
+
+.course-name {
+    font-weight: bold; /* Bold course name */
+    color: #007bff; /* Blue color for course name */
+}
+
+.course-description {
+    margin-top: 5px; /* Space above description */
+    color: #555; /* Dark gray for description */
+}
+
+/* Input Styles */
+input[type="text"], input[type="number"], select, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increased padding */
+    margin: 10px 0; /* Increased margin */
+    box-sizing: border-box; /* Box sizing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Button Styles */
+input[type="submit"], input[type="button"] {
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    padding: 12px; /* Increased padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Larger font size */
+    width: 100%; /* Full width for buttons */
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image Styles for View Courses Page */
+.image-container {
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space images to the sides */
+    margin-top: 20px; /* Space above the image container */
+}
+
+.compact-image {
+    width: 150px; /* Set to medium size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Adjusting the flex property for better spacing */
+.image-container img {
+    flex: 1; /* Allow images to take up available space */
+    max-width: 150px; /* Ensure images do not exceed this width */
+    margin: 0 10px; /* Space between images */
+}
+
+/* Responsive Adjustments (Optional) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%; /* Increase width for smaller screens */
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+    
+    nav ul li {
+        margin: 0 5px; /* Reduce spacing between items on smaller screens */
+    }
+}
