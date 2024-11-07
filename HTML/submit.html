@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Management</title>
+    <link rel="stylesheet" href="stylesforhome.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="submit.html">Submit Data</a></li>
+            <li><a href="view-courses.html">View Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Save and View Student Data</h1>
+        <label for="studentid">Student ID:</label>
+        <input type="text" name="studentid" id="studentid" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="class">Field Of Study:</label>
+        <input type="text" name="class" id="class" required>
+        
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required>
+        
+        <label for="course">Select Course:</label>
+        <select name="course" id="course" required>
+            <option value="">--Select a Course--</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Web Development Basics">Web Development Basics</option>
+            <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+            <option value="Database Management">Database Management</option>
+            <option value="Software Engineering Principles">Software Engineering Principles</option>
+            <option value="Machine Learning Fundamentals">Machine Learning Fundamentals</option>
+        </select>
+        
+        <input type="submit" id="savestudent" value="Save Student Data">
+        <p id="studentSaved"></p>
+        
+        <input type="submit" id="getstudents" value="View All Students">
+        
+        <div id="showStudents">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student data will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
